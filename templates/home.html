@@ -1,0 +1,16 @@
+{% extends '_layout.html' %}
+{% block title %} Home {% endblock %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            Home page
+            {% if session['name'] %}
+               welcome {{ session['name'] }}
+            {% else %}
+                not Login
+            {% endif %}
+        </div> <!-- <div> kapatma etiketi düzeltildi -->
+    </div> <!-- <div> kapatma etiketi düzeltildi -->
+</div> <!-- <div> kapatma etiketi düzeltildi -->
+{% endblock %}
